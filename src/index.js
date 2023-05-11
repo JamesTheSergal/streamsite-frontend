@@ -5,6 +5,7 @@ import App from './App';
 import Test from './pages/Test';
 import FancyPlayer from './components/FancyPlayer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Register from './pages/register';
 
 export default function Router(){
   return (
@@ -13,6 +14,7 @@ export default function Router(){
         <Route path="/" />
           <Route index element={<App />} />
           <Route path="test" element={<FancyPlayer />}/>
+          <Route path="register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   )
